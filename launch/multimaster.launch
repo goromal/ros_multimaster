@@ -1,0 +1,9 @@
+<launch>
+
+  <node name="master_discoverer" pkg="master_discovery_fkie" type="master_discovery">
+    <param name="_mcast_group" value="224.0.0.1"/>
+  </node>
+
+  <node name="master_sync" pkg="master_sync_fkie" type="master_sync"/>
+
+</launch>
